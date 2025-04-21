@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - echo Zipping frontend and backend...
-      - zip -r task-api.zip ../frontend ../backend
+      - zip -r task-api.zip frontend backend
 
 artifacts:
   files:
