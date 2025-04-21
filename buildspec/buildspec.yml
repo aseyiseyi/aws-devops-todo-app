@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.12
+    commands:
+      - echo Installing dependencies...
+  build:
+    commands:
+      - echo Zipping frontend and backend...
+      - zip -r task-api.zip ../frontend ../backend
+
+artifacts:
+  files:
+    - task-api.zip
